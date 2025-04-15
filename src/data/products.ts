@@ -11,18 +11,18 @@ export const products: Product[] = [
   {
     id: 1,
     name: "Hasom Hoodie",
-    price: 24.99,
+    price: 45.99,
     imageUrl: "/mockup/hoodie-hasom-navy.jpg",
-    description: "Comfortable cotton t-shirt featuring our pixel art cats",
+    description: "Cozy hoodie with Hasom in a hoodie",
     category: 'clothing'
   },
   
   {
     id: 2,
     name: "Haron Hoodie",
-    price: 39.99,
+    price: 45.99,
     imageUrl: "/mockup/hoodie-haron-gray.jpg",
-    description: "Cozy hoodie with pixel art cat designs",
+    description: "Cozy hoodie with Haron in a hoodie",
     category: 'clothing'
   },
   {
@@ -46,15 +46,15 @@ export const products: Product[] = [
     name: "I-Want-To Sticker",
     price: 9.99,
     imageUrl: "/mockup/i-want-to-sticker.jpg",
-    description: "Set of 2 i-Want-Tostickers",
+    description: "Set of 2 I-Want-Tostickers",
     category: 'accessories'
   },
   {
     id: 6,
     name: "Pawprint-sticker",
-    price: 19.99,
+    price: 9.99,
     imageUrl: "/mockup/pawprint-sticker.jpg",
-    description: "Set of 2 pawprint-sticker",
+    description: "Set of 2 Pawprint-sticker",
     category: 'accessories'
   },
   {
@@ -68,7 +68,7 @@ export const products: Product[] = [
   {
     id: 8,
     name: "Hug Rug",
-    price: 29.99,
+    price: 89.99,
     imageUrl: "/mockup/hug-rug.jpg",
     description: "Loveful Hug Rug with Haron and Hasom Hugging each other",
     category: 'home'
@@ -78,7 +78,7 @@ export const products: Product[] = [
     name: "Hasom Poster",
     price: 11.99,
     imageUrl: "/mockup/poster-hasom.jpg",
-    description: "Poster with pixel art cat designs",
+    description: "Poster with Hasom and his favorites",
     category: 'posters'
   },
   {
@@ -86,7 +86,7 @@ export const products: Product[] = [
     name: "Haron Poster",
     price: 11.99,
     imageUrl: "/mockup/poster-haron.jpg",
-    description: "Poster with pixel art cat designs",
+    description: "Poster with Haron and his favorites",
     category: 'posters'
   }
 ]; 
