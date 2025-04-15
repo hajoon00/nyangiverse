@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { calculateResult } from "@/app/lib/result";
 import { Choice } from "@/data/questions";
+import Image from "next/image";
 
 export default function ResultPage() {
   const router = useRouter();
@@ -27,9 +28,24 @@ export default function ResultPage() {
     return <div>Loading...</div>;
   }
 
+  // Determine which result image to show
+  const isHasom = result.hasom > result.haron;
+  const resultType = isHasom ? "Hasom" : "Haron";
+
   return (
     <main className="min-h-screen bg-gray-50 py-12 px-4">
       <div className="max-w-4xl mx-auto text-center">
+        {/* Result Image */}
+        <div className="w-full h-[400px] relative mb-12">
+          <Image
+            src={`/Result-${resultType}.png`}
+            alt={`${resultType} Result`}
+            fill
+            className="object-contain"
+            priority
+          />
+        </div>
+
         <h1 className="text-3xl font-bold mb-8 text-gray-800">Your Results</h1>
 
         <div className="grid grid-cols-2 gap-8 mb-8">
@@ -52,7 +68,7 @@ export default function ResultPage() {
 
         <button
           onClick={() => router.push("/quiz/intro")}
-          className="bg-main-500 text-white px-6 py-3 rounded-lg hover:bg-main-500 transition-colors"
+          className="bg-main-500 text-white px-6 py-3 rounded-lg hover:bg-main-600 transition-colors"
         >
           Take the test again
         </button>

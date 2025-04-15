@@ -53,20 +53,20 @@ export default function Home() {
           <div className="text-center p-8">
             <h2 className="text-6xl font-pixel mb-4">Cartoons</h2>
             <p className="text-xl text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity">
-              Explore our pixel art stories
+              Explore our pixel cartoons
             </p>
           </div>
         </Link>
 
         {/* Quiz Section */}
         <Link
-          href="/quiz"
+          href="/quiz/intro"
           className="group relative flex items-center justify-center border-r border-gray-100 hover:bg-gray-50 transition-all"
         >
           <div className="text-center p-8">
             <h2 className="text-6xl font-pixel mb-4">Quiz</h2>
             <p className="text-xl text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity">
-              Test your cat knowledge
+              Are you close to Hasom or Haron?
             </p>
           </div>
         </Link>
