@@ -16,16 +16,9 @@ export const products: Product[] = [
     description: "Comfortable cotton t-shirt featuring our pixel art cats",
     category: 'clothing'
   },
+  
   {
     id: 2,
-    name: "Cat Mug",
-    price: 14.99,
-    imageUrl: "/mockup/mug.jpg",
-    description: "Ceramic mug with peaceful cat designs",
-    category: 'home'
-  },
-  {
-    id: 3,
     name: "Haron Hoodie",
     price: 39.99,
     imageUrl: "/mockup/hoodie-haron-gray.jpg",
@@ -33,7 +26,23 @@ export const products: Product[] = [
     category: 'clothing'
   },
   {
+    id: 3,
+    name: "Haron in Mug on Mug",
+    price: 14.99,
+    imageUrl: "/mockup/mug-haron.jpg",
+    description: "Ceramic mug with Haron in a mug",
+    category: 'home'
+  },
+  {
     id: 4,
+    name: "Hasom in Mug on Mug",
+    price: 14.99,
+    imageUrl: "/mockup/mug-hasom.jpg",
+    description: "Ceramic mug with Hasom in a mug",
+    category: 'home'
+  },
+  {
+    id: 5,
     name: "I-Want-To Sticker",
     price: 9.99,
     imageUrl: "/mockup/i-want-to-sticker.jpg",
@@ -41,19 +50,11 @@ export const products: Product[] = [
     category: 'accessories'
   },
   {
-    id: 5,
+    id: 6,
     name: "Pawprint-sticker",
     price: 19.99,
     imageUrl: "/mockup/pawprint-sticker.jpg",
     description: "Set of 2 pawprint-sticker",
-    category: 'accessories'
-  },
-  {
-    id: 6,
-    name: "Phone Case",
-    price: 16.99,
-    imageUrl: "/mockup/phonecase.jpg",
-    description: "Protective phone case featuring pixel art cats",
     category: 'accessories'
   },
   {

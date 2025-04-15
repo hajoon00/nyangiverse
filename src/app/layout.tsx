@@ -21,7 +21,7 @@ export default function RootLayout({
         <footer className="bg-white border-t">
           <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
             <p className="text-center text-gray-500">
-              © 2024 Nyangiverse. All rights reserved.
+              © 2025 Nyangiverse. All rights reserved.
             </p>
           </div>
         </footer>
