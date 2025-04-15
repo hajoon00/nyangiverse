@@ -1,26 +1,28 @@
-import type { Metadata } from "next";
+"use client";
+
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from "./components/Navigation";
+import { usePathname } from "next/navigation";
 
-export const metadata: Metadata = {
-  title: "Nyangiverse - Meet Hasom & Haron",
-  description:
-    "Discover whether you're more like Hasom, the energetic explorer, or Haron, the calm and gentle soul",
-};
+const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const pathname = usePathname();
+  const isHomePage = pathname === "/";
+
   return (
     <html lang="en">
-      <body>
-        <Navigation />
-        <main className="min-h-screen bg-gray-50">{children}</main>
+      <body className={inter.className}>
+        {!isHomePage && <Navigation />}
+        {children}
         <footer className="bg-white border-t">
-          <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-            <p className="text-center text-gray-500">
+          <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
+            <p className="text-center text-sm text-gray-500">
               © 2025 Nyangiverse. All rights reserved.
             </p>
           </div>
