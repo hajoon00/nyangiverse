@@ -1,4 +1,5 @@
 import { Product } from "@/data/products";
+import Image from "next/image";
 
 interface ProductCardProps {
   product: Product;
@@ -7,11 +8,14 @@ interface ProductCardProps {
 export default function ProductCard({ product }: ProductCardProps) {
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105">
-      <div className="aspect-square bg-gray-100 relative">
-        {/* Placeholder for image - replace with actual image */}
-        <div className="absolute inset-0 flex items-center justify-center text-gray-400">
-          {product.name}
-        </div>
+      <div className="aspect-[4/3] bg-gray-100 relative">
+        <Image
+          src={product.imageUrl}
+          alt={product.name}
+          fill
+          className="object-cover"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
       </div>
       <div className="p-4">
         <h3 className="text-lg font-pixel font-semibold text-gray-900">

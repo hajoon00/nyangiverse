@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 export default function Navigation() {
   const pathname = usePathname();
@@ -19,9 +20,14 @@ export default function Navigation() {
           {/* Logo on the left */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
-              <span className="text-xl font-pixel font-bold text-main-500">
-                Nyangiverse
-              </span>
+              <Image
+                src="/logo.svg"
+                alt="Nyangiverse Logo"
+                width={120}
+                height={40}
+                className="h-8 w-auto"
+                priority
+              />
             </Link>
           </div>
 

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { cartoons } from "@/data/cartoons";
+import Image from "next/image";
 
 export default function CartoonsPage() {
   return (
@@ -20,11 +21,15 @@ export default function CartoonsPage() {
               key={cartoon.id}
               className="bg-white rounded-lg shadow-lg overflow-hidden"
             >
-              <div className="aspect-video bg-gray-200 relative">
+              <div className="aspect-square bg-gray-200 relative">
                 {/* Placeholder for thumbnail - replace with actual image */}
-                <div className="absolute inset-0 flex items-center justify-center text-gray-400">
-                  Thumbnail
-                </div>
+
+                <Image
+                  src={cartoon.thumbnail}
+                  alt={cartoon.title}
+                  fill
+                  className="object-cover"
+                />
               </div>
               <div className="p-6">
                 <h2 className="text-2xl font-bold text-gray-800 mb-2">

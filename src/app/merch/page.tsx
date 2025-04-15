@@ -19,7 +19,7 @@ export default function MerchPage() {
     "clothing",
     "accessories",
     "home",
-    "digital",
+    "posters",
   ];
 
   return (

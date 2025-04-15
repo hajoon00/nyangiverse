@@ -4,15 +4,15 @@ export interface Product {
   price: number;
   imageUrl: string;
   description: string;
-  category: 'clothing' | 'accessories' | 'home' | 'digital';
+  category: 'clothing' | 'accessories' | 'home' | 'posters';
 }
 
 export const products: Product[] = [
   {
     id: 1,
-    name: "Nyangiverse T-Shirt",
+    name: "Hasom Hoodie",
     price: 24.99,
-    imageUrl: "/images/merch/tshirt.jpg",
+    imageUrl: "/mockup/hoodie-hasom-navy.jpg",
     description: "Comfortable cotton t-shirt featuring our pixel art cats",
     category: 'clothing'
   },
@@ -20,64 +20,72 @@ export const products: Product[] = [
     id: 2,
     name: "Cat Mug",
     price: 14.99,
-    imageUrl: "/images/merch/mug.jpg",
+    imageUrl: "/mockup/mug.jpg",
     description: "Ceramic mug with peaceful cat designs",
     category: 'home'
   },
   {
     id: 3,
-    name: "Nyangiverse Hoodie",
+    name: "Haron Hoodie",
     price: 39.99,
-    imageUrl: "/images/merch/hoodie.jpg",
+    imageUrl: "/mockup/hoodie-haron-gray.jpg",
     description: "Cozy hoodie with pixel art cat designs",
     category: 'clothing'
   },
   {
     id: 4,
-    name: "Sticker Pack",
+    name: "I-Want-To Sticker",
     price: 9.99,
-    imageUrl: "/images/merch/stickers.jpg",
-    description: "Set of 5 adorable pixel art cat stickers",
+    imageUrl: "/mockup/i-want-to-sticker.jpg",
+    description: "Set of 2 i-Want-Tostickers",
     category: 'accessories'
   },
   {
     id: 5,
-    name: "Tote Bag",
+    name: "Pawprint-sticker",
     price: 19.99,
-    imageUrl: "/images/merch/tote.jpg",
-    description: "Eco-friendly tote bag with pixel art designs",
+    imageUrl: "/mockup/pawprint-sticker.jpg",
+    description: "Set of 2 pawprint-sticker",
     category: 'accessories'
   },
   {
     id: 6,
     name: "Phone Case",
     price: 16.99,
-    imageUrl: "/images/merch/phonecase.jpg",
+    imageUrl: "/mockup/phonecase.jpg",
     description: "Protective phone case featuring pixel art cats",
     category: 'accessories'
   },
   {
     id: 7,
-    name: "Digital Art Pack",
+    name: "MEOOOWWW Poster",
     price: 12.99,
-    imageUrl: "/images/merch/digital.jpg",
-    description: "Downloadable pack of high-resolution pixel art",
-    category: 'digital'
+    imageUrl: "/mockup/poster-meme.jpg",
+    description: "Poster with Haron and Hasom Meowing",
+    category: 'posters'
   },
   {
     id: 8,
-    name: "Cat Pillow",
+    name: "Hug Rug",
     price: 29.99,
-    imageUrl: "/images/merch/pillow.jpg",
-    description: "Soft decorative pillow with embroidered cat design",
+    imageUrl: "/mockup/hug-rug.jpg",
+    description: "Loveful Hug Rug with Haron and Hasom Hugging each other",
     category: 'home'
   },
   {
     id: 9,
-    name: "Cat Socks",
+    name: "Hasom Poster",
     price: 11.99,
-    imageUrl: "/images/merch/socks.jpg",
-    description: "Comfortable socks with pixel art cat patterns",
-    category: 'clothing'
+    imageUrl: "/mockup/poster-hasom.jpg",
+    description: "Poster with pixel art cat designs",
+    category: 'posters'
+  },
+  {
+    id: 10,
+    name: "Haron Poster",
+    price: 11.99,
+    imageUrl: "/mockup/poster-haron.jpg",
+    description: "Poster with pixel art cat designs",
+    category: 'posters'
   }
 ]; 
