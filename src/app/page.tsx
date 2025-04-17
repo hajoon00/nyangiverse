@@ -73,7 +73,7 @@ export default function Home() {
 
         {/* Shop Section */}
         <Link
-          href="/shop"
+          href="/merch"
           className="group relative flex items-center justify-center hover:bg-gray-50 transition-all"
         >
           <div className="text-center p-8">
